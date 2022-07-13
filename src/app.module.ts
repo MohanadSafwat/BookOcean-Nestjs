@@ -19,7 +19,8 @@ import { PublisherModule } from './publisher/publisher.module';
       database: 'd8di9og098jp0i',
       entities: entities,
       synchronize: true,
-      ssl: true
+      ssl: { rejectUnauthorized: false }
+
     }),
   ],
 })
